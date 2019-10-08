@@ -1,0 +1,28 @@
+Package: algothemes
+Title: Algoritma Data Science School visualization themes
+Version: 0.0.0.9000
+Authors@R: 
+  person(
+    given = "R. Dimas Bagas",
+    family = "Herlambang",
+    role = c("aut", "cre"),
+    email = "bagas@algorit.ma"
+  )
+Description: A set of ggplot2 visualization themes used by
+  Algoritma Data Science School.
+URL: https://github.com/bagasbgy/algothemes
+BugReports: https://github.com/bagasbgy/algothemes/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Depends:
+  R (>= 3.5.0),
+Imports:
+  ggplot2,
+  grDevices,
+  jsonlite
+Suggests:
+  testthat (>= 2.1.0),
+  rmarkdown

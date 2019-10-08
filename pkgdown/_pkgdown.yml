@@ -1,0 +1,39 @@
+url: https://algothemes.bagasbgy.com
+
+authors:
+  R. Dimas Bagas Herlambang:
+    href: https://bagasbgy.com
+
+template:
+  package: bgypkg
+
+home:
+  strip_header: true
+
+navbar:
+  type: default
+  left:
+  - text: Reference
+    href: reference/index.html
+  - text: Gallery
+    href: articles/gallery.html
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/bagasbgy/algothemes
+
+reference:
+  - title: Themes
+    contents:
+      - theme_algo
+  - title: Scales
+    contents:
+      - scale_color_algo
+      - scale_fill_algo
+  - title: Colour pallette
+    contents:
+      - palette_algo_light
+
+destination: docs
+
+development:
+  mode: auto
