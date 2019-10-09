@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis build status](https://travis-ci.org/bagasbgy/algothemes.svg?branch=master)](https://travis-ci.org/bagasbgy/algothemes)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/bagasbgy/algothemes?branch=master&svg=true)](https://ci.appveyor.com/project/bagasbgy/algothemes)
 <!-- badges: end -->
 
 ## Overview
