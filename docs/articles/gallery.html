@@ -123,51 +123,51 @@
 <a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw"><a href="https://rdrr.io/r/stats/filter.html">filter</a></span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2007</span>)</a>
 <a class="sourceLine" id="cb3-3" data-line-number="3"></a>
 <a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">ggplot</span>(data_viz, <span class="kw">aes</span>(<span class="dt">x =</span> gdp_percap, <span class="dt">y =</span> life_exp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_point</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">alpha =</span> <span class="fl">0.65</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-6" data-line-number="6"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">"loess"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-7" data-line-number="7"><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">labels =</span> <span class="kw"><a href="https://rdrr.io/pkg/scales/man/dollar_format.html">dollar_format</a></span>(<span class="dt">scale =</span> <span class="fl">1e-3</span>, <span class="dt">suffix =</span> <span class="st">"K"</span>)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb3-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb3-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">How much for one year of life? It depends.</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"How much for one year of life? It depends."</span>,</a>
 <a class="sourceLine" id="cb3-10" data-line-number="10">    <span class="dt">subtitle =</span> <span class="st">"Life expectancy by GDP per capita for 142 countries in 2007"</span>,</a>
 <a class="sourceLine" id="cb3-11" data-line-number="11">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb3-12" data-line-number="12">    <span class="dt">x =</span> <span class="st">"GDP per Capita"</span>,</a>
 <a class="sourceLine" id="cb3-13" data-line-number="13">    <span class="dt">y =</span> <span class="st">"Life Expectancy"</span></a>
 <a class="sourceLine" id="cb3-14" data-line-number="14">  )</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-3-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-3-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-light-theme" class="section level3">
 <h3 class="hasAnchor">
 <a href="#with-light-theme" class="anchor"></a>With light theme</h3>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(data_viz, <span class="kw">aes</span>(<span class="dt">x =</span> gdp_percap, <span class="dt">y =</span> life_exp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"light-orange"</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">"loess"</span>, <span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"yellow"</span>), <span class="dt">fill =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"yellow"</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"red"</span>), <span class="dt">alpha =</span> <span class="fl">0.65</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">"loess"</span>, <span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"purple"</span>), <span class="dt">fill =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_light</a></span>(<span class="st">"purple"</span>)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">labels =</span> <span class="kw"><a href="https://rdrr.io/pkg/scales/man/dollar_format.html">dollar_format</a></span>(<span class="dt">scale =</span> <span class="fl">1e-3</span>, <span class="dt">suffix =</span> <span class="st">"K"</span>)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb4-6" data-line-number="6">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">How much for one year of life? It depends.</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">    <span class="dt">title =</span> <span class="st">"How much for one year of life? It depends."</span>,</a>
 <a class="sourceLine" id="cb4-7" data-line-number="7">    <span class="dt">subtitle =</span> <span class="st">"Life expectancy by GDP per capita for 142 countries in 2007"</span>,</a>
 <a class="sourceLine" id="cb4-8" data-line-number="8">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb4-9" data-line-number="9">    <span class="dt">x =</span> <span class="st">"GDP per Capita"</span>,</a>
 <a class="sourceLine" id="cb4-10" data-line-number="10">    <span class="dt">y =</span> <span class="st">"Life Expectancy"</span></a>
 <a class="sourceLine" id="cb4-11" data-line-number="11">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-12" data-line-number="12"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"light"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-4-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-4-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-dark-theme" class="section level3">
 <h3 class="hasAnchor">
 <a href="#with-dark-theme" class="anchor"></a>With dark theme</h3>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">ggplot</span>(data_viz, <span class="kw">aes</span>(<span class="dt">x =</span> gdp_percap, <span class="dt">y =</span> life_exp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"light-orange"</span>)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">"loess"</span>, <span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"yellow"</span>), <span class="dt">fill =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"yellow"</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"red"</span>), <span class="dt">alpha =</span> <span class="fl">0.65</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">geom_smooth</span>(<span class="dt">method =</span> <span class="st">"loess"</span>, <span class="dt">colour =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"purple"</span>), <span class="dt">fill =</span> <span class="kw"><a href="../reference/palette_algo_light.html">palette_algo_dark</a></span>(<span class="st">"purple"</span>)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">scale_x_continuous</span>(<span class="dt">labels =</span> <span class="kw"><a href="https://rdrr.io/pkg/scales/man/dollar_format.html">dollar_format</a></span>(<span class="dt">scale =</span> <span class="fl">1e-3</span>, <span class="dt">suffix =</span> <span class="st">"K"</span>)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">How much for one year of life? It depends.</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb5-6" data-line-number="6">    <span class="dt">title =</span> <span class="st">"How much for one year of life? It depends."</span>,</a>
 <a class="sourceLine" id="cb5-7" data-line-number="7">    <span class="dt">subtitle =</span> <span class="st">"Life expectancy by GDP per capita for 142 countries in 2007"</span>,</a>
 <a class="sourceLine" id="cb5-8" data-line-number="8">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb5-9" data-line-number="9">    <span class="dt">x =</span> <span class="st">"GDP per Capita"</span>,</a>
 <a class="sourceLine" id="cb5-10" data-line-number="10">    <span class="dt">y =</span> <span class="st">"Life Expectancy"</span></a>
 <a class="sourceLine" id="cb5-11" data-line-number="11">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-12" data-line-number="12"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"dark"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-5-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="bar" class="section level2">
@@ -189,13 +189,13 @@
 <a class="sourceLine" id="cb6-11" data-line-number="11"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb6-12" data-line-number="12"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb6-13" data-line-number="13"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb6-14" data-line-number="14">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb6-14" data-line-number="14">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb6-15" data-line-number="15">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb6-16" data-line-number="16">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb6-17" data-line-number="17">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
 <a class="sourceLine" id="cb6-18" data-line-number="18">    <span class="dt">y =</span> <span class="ot">NULL</span></a>
 <a class="sourceLine" id="cb6-19" data-line-number="19">  )</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-6-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-6-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-light-theme-1" class="section level3">
 <h3 class="hasAnchor">
@@ -207,7 +207,7 @@
 <a class="sourceLine" id="cb7-5" data-line-number="5"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb7-6" data-line-number="6"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb7-7" data-line-number="7"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb7-8" data-line-number="8">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb7-8" data-line-number="8">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb7-9" data-line-number="9">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb7-10" data-line-number="10">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb7-11" data-line-number="11">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
@@ -215,7 +215,7 @@
 <a class="sourceLine" id="cb7-13" data-line-number="13">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb7-14" data-line-number="14"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"light"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb7-15" data-line-number="15"><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_algo.html">scale_fill_algo</a></span>(<span class="dt">discrete =</span> <span class="ot">FALSE</span>, <span class="dt">mode =</span> <span class="st">"light"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-7-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-7-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-dark-theme-1" class="section level3">
 <h3 class="hasAnchor">
@@ -227,7 +227,7 @@
 <a class="sourceLine" id="cb8-5" data-line-number="5"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-6" data-line-number="6"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">fill =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-7" data-line-number="7"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb8-8" data-line-number="8">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb8-8" data-line-number="8">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb8-9" data-line-number="9">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb8-10" data-line-number="10">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb8-11" data-line-number="11">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
@@ -235,7 +235,7 @@
 <a class="sourceLine" id="cb8-13" data-line-number="13">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-14" data-line-number="14"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"dark"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb8-15" data-line-number="15"><span class="st">  </span><span class="kw"><a href="../reference/scale_fill_algo.html">scale_fill_algo</a></span>(<span class="dt">discrete =</span> <span class="ot">FALSE</span>, <span class="dt">mode =</span> <span class="st">"dark"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-8-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-8-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div id="lollipop" class="section level2">
@@ -258,13 +258,13 @@
 <a class="sourceLine" id="cb9-12" data-line-number="12"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb9-13" data-line-number="13"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">colour =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb9-14" data-line-number="14"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb9-15" data-line-number="15">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb9-15" data-line-number="15">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb9-16" data-line-number="16">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb9-17" data-line-number="17">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb9-18" data-line-number="18">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
 <a class="sourceLine" id="cb9-19" data-line-number="19">    <span class="dt">y =</span> <span class="ot">NULL</span></a>
 <a class="sourceLine" id="cb9-20" data-line-number="20">  )</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-9-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-9-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-light-theme-2" class="section level3">
 <h3 class="hasAnchor">
@@ -277,7 +277,7 @@
 <a class="sourceLine" id="cb10-6" data-line-number="6"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-7" data-line-number="7"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">colour =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb10-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb10-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb10-10" data-line-number="10">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb10-11" data-line-number="11">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb10-12" data-line-number="12">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
@@ -285,7 +285,7 @@
 <a class="sourceLine" id="cb10-14" data-line-number="14">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-15" data-line-number="15"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"light"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb10-16" data-line-number="16"><span class="st">  </span><span class="kw"><a href="../reference/scale_color_algo.html">scale_colour_algo</a></span>(<span class="dt">discrete =</span> <span class="ot">FALSE</span>, <span class="dt">mode =</span> <span class="st">"light"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-10-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-10-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 <div id="with-dark-theme-2" class="section level3">
 <h3 class="hasAnchor">
@@ -298,7 +298,7 @@
 <a class="sourceLine" id="cb11-6" data-line-number="6"><span class="st">  </span><span class="kw">coord_flip</span>() <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-7" data-line-number="7"><span class="st">  </span><span class="kw">guides</span>(<span class="dt">colour =</span> <span class="ot">FALSE</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(</a>
-<a class="sourceLine" id="cb11-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"</span><span class="ch">\"</span><span class="st">Getting crowded, isn't it?</span><span class="ch">\"</span><span class="st">"</span>,</a>
+<a class="sourceLine" id="cb11-9" data-line-number="9">    <span class="dt">title =</span> <span class="st">"Getting crowded, isn't it?"</span>,</a>
 <a class="sourceLine" id="cb11-10" data-line-number="10">    <span class="dt">subtitle =</span> <span class="st">"Top 10 countries with most population in 2007"</span>,</a>
 <a class="sourceLine" id="cb11-11" data-line-number="11">    <span class="dt">caption =</span> <span class="st">"Source: Gapminder (http://gapminder.org)"</span>,</a>
 <a class="sourceLine" id="cb11-12" data-line-number="12">    <span class="dt">x =</span> <span class="ot">NULL</span>,</a>
@@ -306,7 +306,7 @@
 <a class="sourceLine" id="cb11-14" data-line-number="14">  ) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-15" data-line-number="15"><span class="st">  </span><span class="kw"><a href="../reference/theme_algo.html">theme_algo</a></span>(<span class="dt">mode =</span> <span class="st">"dark"</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb11-16" data-line-number="16"><span class="st">  </span><span class="kw"><a href="../reference/scale_color_algo.html">scale_colour_algo</a></span>(<span class="dt">discrete =</span> <span class="ot">FALSE</span>, <span class="dt">mode =</span> <span class="st">"dark"</span>)</a></code></pre></div>
-<p><img src="gallery_files/figure-html/unnamed-chunk-11-1.png" width="700"></p>
+<p><img src="gallery_files/figure-html/unnamed-chunk-11-1.png" width="700" style="display: block; margin: auto;"></p>
 </div>
 </div>
   </div>

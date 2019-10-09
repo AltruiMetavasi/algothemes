@@ -41,7 +41,7 @@ p <- ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 p
 ```
 
-![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
+<img src="man/figures/README-unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
 
 ``` r
 # with theme algo and light mode
@@ -50,7 +50,7 @@ p +
   scale_colour_algo(mode = "light")
 ```
 
-![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
+<img src="man/figures/README-unnamed-chunk-4-1.png" style="display: block; margin: auto;" />
 
 ``` r
 # with theme algo and dark mode
@@ -59,4 +59,4 @@ p +
   scale_colour_algo(mode = "dark")
 ```
 
-![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
+<img src="man/figures/README-unnamed-chunk-5-1.png" style="display: block; margin: auto;" />

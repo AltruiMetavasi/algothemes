@@ -39,16 +39,22 @@ palette_algo_light <- function(color = NULL, colour = color) {
 
   }
 
-  # color list
+  # important colours
+  # main: red
+  # highlight: purple
+  # gradient-low: orange
+  # gradient-high: red
+
+  # colour list:
   color_list <- fromJSON('
     [
-      {"color":"#b4ddd4", "name":"light-blue", "textColor":"black"},
-      {"color":"#faa566", "name":"light-orange", "textColor":"black"},
-      {"color":"#aaf841", "name":"yellow-green", "textColor":"black"},
-      {"color":"#f2b0f6", "name":"light-purple", "textColor":"black"},
-      {"color":"#20f53d", "name":"green", "textColor":"black"},
-      {"color":"#46ebdc", "name":"turquoise", "textColor":"black"},
-      {"color":"#f8e547", "name":"yellow", "textColor":"black"}
+      {"color":"#d02128", "name":"red", "textColor":"white"},
+      {"color":"#f2b0f6", "name":"purple", "textColor":"white"},
+      {"color":"#b4ddd4", "name":"blue", "textColor":"white"},
+      {"color":"#faa566", "name":"orange", "textColor":"white"},
+      {"color":"#aaf841", "name":"green", "textColor":"white"},
+      {"color":"#46ebdc", "name":"turquoise", "textColor":"white"},
+      {"color":"#f8e547", "name":"yellow", "textColor":"white"}
     ]
   ')
 
@@ -80,7 +86,7 @@ ramp_palette_algo_light <- function(discrete = TRUE) {
 
   } else {
 
-    colorRampPalette(pal[c("yellow", "light-orange")])
+    colorRampPalette(pal[c("orange", "red")])
 
   }
 
@@ -107,14 +113,20 @@ palette_algo_dark <- function(color = NULL, colour = color) {
 
   }
 
-  # color list
+  # important colours
+  # main: red
+  # highlight: purple
+  # gradient-low: orange
+  # gradient-high: red
+
+  # colour list:
   color_list <- fromJSON('
     [
-      {"color":"#b4ddd4", "name":"light-blue", "textColor":"black"},
-      {"color":"#faa566", "name":"light-orange", "textColor":"black"},
-      {"color":"#aaf841", "name":"yellow-green", "textColor":"black"},
-      {"color":"#f2b0f6", "name":"light-purple", "textColor":"black"},
-      {"color":"#20f53d", "name":"green", "textColor":"black"},
+      {"color":"#d02928", "name":"red", "textColor":"black"},
+      {"color":"#f2b0f6", "name":"purple", "textColor":"black"},
+      {"color":"#b4ddd4", "name":"blue", "textColor":"black"},
+      {"color":"#faa566", "name":"orange", "textColor":"black"},
+      {"color":"#aaf841", "name":"green", "textColor":"black"},
       {"color":"#46ebdc", "name":"turquoise", "textColor":"black"},
       {"color":"#f8e547", "name":"yellow", "textColor":"black"}
     ]
@@ -148,7 +160,7 @@ ramp_palette_algo_dark <- function(discrete = TRUE) {
 
   } else {
 
-    colorRampPalette(pal[c("yellow", "light-orange")])
+    colorRampPalette(pal[c("orange", "red")])
 
   }
 

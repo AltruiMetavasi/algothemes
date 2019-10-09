@@ -6,6 +6,7 @@ title: "Gallery"
 knitr::opts_chunk$set(
   message = FALSE,
   warning = FALSE,
+  fig.align = "center",
   collapse = TRUE,
   comment = "#>"
 )
@@ -47,11 +48,11 @@ data_viz <- data_clean %>%
   filter(year == 2007)
 
 ggplot(data_viz, aes(x = gdp_percap, y = life_exp)) +
-  geom_point() +
+  geom_point(alpha = 0.65) +
   geom_smooth(method = "loess") +
   scale_x_continuous(labels = dollar_format(scale = 1e-3, suffix = "K")) +
   labs(
-    title = "\"How much for one year of life? It depends.\"",
+    title = "How much for one year of life? It depends.",
     subtitle = "Life expectancy by GDP per capita for 142 countries in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = "GDP per Capita",
@@ -63,11 +64,11 @@ ggplot(data_viz, aes(x = gdp_percap, y = life_exp)) +
 
 ```{r}
 ggplot(data_viz, aes(x = gdp_percap, y = life_exp)) +
-  geom_point(colour = palette_algo_light("light-orange")) +
-  geom_smooth(method = "loess", colour = palette_algo_light("yellow"), fill = palette_algo_light("yellow")) +
+  geom_point(colour = palette_algo_light("red"), alpha = 0.65) +
+  geom_smooth(method = "loess", colour = palette_algo_light("purple"), fill = palette_algo_light("purple")) +
   scale_x_continuous(labels = dollar_format(scale = 1e-3, suffix = "K")) +
   labs(
-    title = "\"How much for one year of life? It depends.\"",
+    title = "How much for one year of life? It depends.",
     subtitle = "Life expectancy by GDP per capita for 142 countries in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = "GDP per Capita",
@@ -80,11 +81,11 @@ ggplot(data_viz, aes(x = gdp_percap, y = life_exp)) +
 
 ```{r}
 ggplot(data_viz, aes(x = gdp_percap, y = life_exp)) +
-  geom_point(colour = palette_algo_dark("light-orange")) +
-  geom_smooth(method = "loess", colour = palette_algo_dark("yellow"), fill = palette_algo_dark("yellow")) +
+  geom_point(colour = palette_algo_dark("red"), alpha = 0.65) +
+  geom_smooth(method = "loess", colour = palette_algo_dark("purple"), fill = palette_algo_dark("purple")) +
   scale_x_continuous(labels = dollar_format(scale = 1e-3, suffix = "K")) +
   labs(
-    title = "\"How much for one year of life? It depends.\"",
+    title = "How much for one year of life? It depends.",
     subtitle = "Life expectancy by GDP per capita for 142 countries in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = "GDP per Capita",
@@ -111,7 +112,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(fill = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
@@ -129,7 +130,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(fill = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
@@ -149,7 +150,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(fill = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
@@ -178,7 +179,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(colour = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
@@ -197,7 +198,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(colour = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
@@ -218,7 +219,7 @@ ggplot(data_viz, aes(x = reorder(iso_alpha, pop), y = pop)) +
   coord_flip() +
   guides(colour = FALSE) +
   labs(
-    title = "\"Getting crowded, isn't it?\"",
+    title = "Getting crowded, isn't it?",
     subtitle = "Top 10 countries with most population in 2007",
     caption = "Source: Gapminder (http://gapminder.org)",
     x = NULL,
